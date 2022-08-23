@@ -1,0 +1,32 @@
+.negativo {
+    position: relative;
+    margin-top:-200px;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 100px;
+}
+
+.contacto-main {
+    @extend .main;
+    background-image: url(../images/contacto-background.jpg);
+}
+
+.container-form {
+    display: flex;
+    justify-content: center;
+    .form-contacto {
+        background: bisque;
+        border-radius: 4rem;
+    
+        .form-input {
+            border-radius: 1rem;
+        }
+    
+        .form-boton {
+            @extend .boton;
+            color: $blanco;
+            width: 9rem;
+        }
+    }
+
+}

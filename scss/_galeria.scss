@@ -1,0 +1,30 @@
+.galeria-main {
+    @extend .main;
+    background-image: url(../images/galeria-background.jpg);
+}
+
+.galeria-slider {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.slider-img {
+    @include img-box (25rem, auto);
+    @extend .galeria-slider;
+}
+
+.slider-img--big {
+    @include img-box (25rem, auto);
+    @extend .galeria-slider;
+
+}
+
+
+.slider-botones {
+    background-color: $rojo;
+    border-radius: 0.5rem;
+}
+
+.slider-fondo-botones {
+    background-color: $negro;
+} 

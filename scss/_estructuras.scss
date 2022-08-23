@@ -1,0 +1,122 @@
+/*ESTRUCTURAS PRINCIPALES*/
+.header-nav{
+    transition: 0.7s;
+    background: $blanco;
+    .nav-container {
+       
+        .nav-img {
+            width: 84px;
+        }
+        .nav-boton {
+            color: $negro;
+            background-color: $negro;
+        }
+        .nav-a {
+            transition: 0.7s;
+            color: $negro;
+        }
+
+    }   
+}
+
+
+.nav-animation {
+    animation-name: nav_at;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+
+@keyframes nav_at {
+    0% {
+    }
+    100%{
+        background: $blanco;
+        color: $negro;
+    }
+}
+
+.main {
+    min-height: 600px;
+    height: 70vh;
+    background-position: center;
+    background: no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.footer-cont-img {
+    display: flex;
+    justify-content: center;
+    .footer-img {
+        margin: 3rem 1rem 0 -2rem;
+    }
+
+}
+
+.footer-a {
+    @extend .texto;
+    text-align: right;
+}
+
+
+/*ESTRUCTURAS SECUNDARIAS*/
+.card-b {
+    margin-top: 20px;
+    border-radius: 1rem;
+    box-shadow:  5px 5px 20px rgba(0,0,0,0.2);
+    cursor:default;
+    transition: all 400ms ease;
+
+    &:hover {
+        box-shadow:  5px 5px 20px rgba(0,0,0,0.4);
+        transform: translateY(-3%);
+    }
+    .card-img {
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;  
+    }
+}
+
+.big-card {
+    @extend .card-b; 
+    .big-card-img {
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+}
+
+.boton {
+    border-radius: 1.5rem;
+    background: $gris-fondo;
+
+    &:hover {
+        color: #fff;
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+    }
+}
+
+.boton--blue {
+    @extend .boton;
+    background: #0b5ed7;
+
+    &:hover {
+        color: #fff;
+        background-color: $gris-fondo;
+        border-color: #0a58ca;
+    }
+}
+
+@media (min-width:992px) {
+    .titulo-h1 {
+        @extend .texto;
+        font-size: 98px;
+        line-height: 104px;
+    } 
+}

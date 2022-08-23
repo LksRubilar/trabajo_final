@@ -1,0 +1,304 @@
+/*CONFIGURACIONES GENERALES*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+/*PALETA DE COLORES*/
+/*UTILIDADES*/
+.mt-3r {
+  margin-top: 3rem;
+}
+
+.mb-3r {
+  margin-bottom: 3rem;
+}
+
+.mr-3r {
+  margin-right: 3rem;
+}
+
+.ml-3r {
+  margin-left: 3rem;
+}
+
+.mt-5r {
+  margin-top: 5rem;
+}
+
+.pd-5r {
+  padding: 5rem;
+}
+
+.pd-7r {
+  padding: 7rem;
+}
+
+/*TEXTOS*/
+.texto, .footer-a, .titulo-h2--grande, .titulo-h2, .header-a, .titulo-h1, .texto-p, .texto-p--der, .texto-p--centro {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  text-transform: none;
+  color: #ffffff;
+  text-align: center;
+  list-style: none;
+}
+
+.texto--black {
+  color: #000000;
+}
+
+.texto--gris {
+  color: #777777;
+}
+
+.texto-a {
+  text-transform: uppercase;
+}
+
+.texto-p, .texto-p--der, .texto-p--centro {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+
+.texto-p--centro {
+  text-align: center;
+}
+
+.texto-p--der {
+  text-align: right;
+}
+
+/*TITULOS*/
+.titulo-h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  padding-top: 4rem;
+  word-wrap: anywhere;
+}
+
+.titulo-h2, .header-a {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+}
+
+.titulo-h2--grande {
+  font-size: calc(1.475rem + 2.7vw);
+  font-weight: 700;
+}
+
+.txt-izq {
+  text-align: left;
+}
+
+.txt-der {
+  text-align: right;
+}
+
+.txt-cen {
+  text-align: center;
+}
+
+.mover {
+  transform: translateY(100px);
+}
+
+/*ESTRUCTURAS PRINCIPALES*/
+.header-nav {
+  transition: 0.7s;
+  background: #ffffff;
+}
+.header-nav .nav-container .nav-img {
+  width: 84px;
+}
+.header-nav .nav-container .nav-boton {
+  color: #000000;
+  background-color: #000000;
+}
+.header-nav .nav-container .nav-a {
+  transition: 0.7s;
+  color: #000000;
+}
+
+.nav-animation {
+  animation-name: nav_at;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+
+@keyframes nav_at {
+  100% {
+    background: #ffffff;
+    color: #000000;
+  }
+}
+.main, .sobre-nosotros-main, .servicios-main, .galeria-main, .contacto-main, .index-main {
+  min-height: 600px;
+  height: 70vh;
+  background-position: center;
+  background: no-repeat;
+  background-size: 100% 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.footer-cont-img {
+  display: flex;
+  justify-content: center;
+}
+.footer-cont-img .footer-img {
+  margin: 3rem 1rem 0 -2rem;
+}
+
+.footer-a {
+  text-align: right;
+}
+
+/*ESTRUCTURAS SECUNDARIAS*/
+.card-b, .big-card {
+  margin-top: 20px;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+.card-b:hover, .big-card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+.card-b .card-img, .big-card .card-img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.big-card .big-card-img {
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.boton, .container-form .form-contacto .form-boton, .boton--blue {
+  border-radius: 1.5rem;
+  background: #212529;
+}
+.boton:hover, .container-form .form-contacto .form-boton:hover, .boton--blue:hover {
+  color: #fff;
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+.boton--blue {
+  background: #0b5ed7;
+}
+.boton--blue:hover {
+  color: #fff;
+  background-color: #212529;
+  border-color: #0a58ca;
+}
+
+@media (min-width: 992px) {
+  .titulo-h1 {
+    font-size: 98px;
+    line-height: 104px;
+  }
+}
+.index-main {
+  background-image: url(../images/index-background.png);
+}
+
+.negativo {
+  position: relative;
+  margin-top: -200px;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 100px;
+}
+
+.contacto-main {
+  background-image: url(../images/contacto-background.jpg);
+}
+
+.container-form {
+  display: flex;
+  justify-content: center;
+}
+.container-form .form-contacto {
+  background: bisque;
+  border-radius: 4rem;
+}
+.container-form .form-contacto .form-input {
+  border-radius: 1rem;
+}
+.container-form .form-contacto .form-boton {
+  color: #ffffff;
+  width: 9rem;
+}
+
+.galeria-main {
+  background-image: url(../images/galeria-background.jpg);
+}
+
+.galeria-slider, .slider-img--big, .slider-img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.slider-img {
+  width: auto;
+  height: 25rem;
+}
+
+.slider-img--big {
+  width: auto;
+  height: 25rem;
+}
+
+.slider-botones {
+  background-color: #ff0000;
+  border-radius: 0.5rem;
+}
+
+.slider-fondo-botones {
+  background-color: #000000;
+}
+
+.servicios-main {
+  background-image: url(../images/servicios-background.jpg);
+}
+
+.main-sub {
+  border-radius: 1rem;
+  margin-top: 3rem;
+}
+
+.sobre-nosotros-main {
+  background-image: url(../images/sobre-nosotros-background.jpg);
+}
+
+.sn-img {
+  border-radius: 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

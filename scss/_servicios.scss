@@ -1,0 +1,9 @@
+.servicios-main {
+    @extend .main;
+    background-image: url(../images/servicios-background.jpg);
+}
+
+.main-sub {
+    border-radius: 1rem;
+    margin-top: 3rem;
+}

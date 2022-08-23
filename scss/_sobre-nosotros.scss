@@ -1,0 +1,8 @@
+.sobre-nosotros-main {
+    @extend .main;
+    background-image: url(../images/sobre-nosotros-background.jpg);
+}
+
+.sn-img {
+    border-radius: 1rem;
+}

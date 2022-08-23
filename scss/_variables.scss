@@ -1,0 +1,152 @@
+/*CONFIGURACIONES GENERALES*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*PALETA DE COLORES*/
+$blanco: #ffffff;
+$negro: #000000;
+$gris-fondo: #212529;
+$blanco-subtitulo: #f4f4f4;
+$gris-texto: #777777;
+$rojo: #ff0000;
+
+/*UTILIDADES*/
+
+.mt-3r {
+    margin-top: 3rem;
+}
+.mb-3r {
+    margin-bottom: 3rem;
+}
+.mr-3r {
+    margin-right: 3rem;
+}
+
+.ml-3r {
+    margin-left: 3rem;
+}
+
+.mt-5r {
+    margin-top: 5rem;
+}
+
+.pd-5r {
+    padding: 5rem;
+}
+
+.pd-7r {
+    padding: 7rem;
+}
+
+/*TEXTOS*/
+.texto {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-transform: none;
+    color: $blanco;
+    text-align: center;
+    list-style: none;
+}
+
+.texto--black {
+    color: $negro;
+}
+
+.texto--gris {
+    color: $gris-texto;
+}
+
+.texto-a {
+    text-transform: uppercase;
+}
+
+
+.texto-p {
+    @extend .texto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left
+}
+
+.texto-p--centro {
+    @extend .texto-p;
+    text-align: center;
+}
+
+.texto-p--der {
+    @extend .texto-p;
+    text-align: right;
+}
+
+
+
+/*TITULOS*/
+
+.titulo-h1 {
+    @extend .texto;
+    font-size: 4rem;
+    font-weight: 700;
+    padding-top: 4rem;
+    word-wrap: anywhere;
+}
+
+.titulo-h2 {
+    @extend .texto;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+}
+
+.titulo-h2--grande {
+    @extend .texto;
+    font-size: calc(1.475rem + 2.7vw);
+    font-weight: 700;
+
+}
+
+.txt-izq {
+    text-align: left;
+}
+
+.txt-der {
+    text-align: right;
+}
+
+.txt-cen {
+    text-align: center;
+}
+.header-a {
+    @extend .titulo-h2;
+    
+}
+
+
+
+@mixin img-box ($ancho, $alto) {
+    width: $alto;
+    height: $ancho;
+}
+
+.mover {
+    transform: translateY(100px);
+}
+
